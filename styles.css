@@ -53,7 +53,14 @@ kbd {
 
 @media only screen and (max-width: 600px) {
   .keys {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .key {
+    flex: 0 27%;
+    height: 100px;
+    margin-bottom: 2%;
   }
 }
