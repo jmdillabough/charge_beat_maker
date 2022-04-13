@@ -50,3 +50,10 @@ kbd {
   letter-spacing: .1rem;
   color: #ffc600;
 }
+
+@media only screen and (max-width: 600px) {
+  .keys {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
